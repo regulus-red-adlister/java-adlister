@@ -18,9 +18,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
-<div class="container-fluid my-5 justify-content-around">
-    <a class="back-button mx-auto" href="/index.jsp"><i class="fa fa-chevron-left" aria-hidden="true">Return Home</i></a>
-</div>
+
 
 <div class="container">
 
@@ -29,7 +27,7 @@
 <%--//added some style to show add in a card*** Agutierrez
 NOTE: when click to indv ad gives error--%>
 
-
+    <div class="container-fluid my-5 justify-content-around">
 
     <div class="display-cards row row-cols-4">
 
@@ -59,9 +57,11 @@ NOTE: when click to indv ad gives error--%>
 
 
 </div>
-<div class="container-fluid my-5 justify-content-around">
 
-    <a class=" mx-auto" href="${pageContext.request.contextPath}/ads">See all ads</a>
+    <a class="back-button mx-auto" href="/profile"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back to Profile</a>
+
+
+    <a class="back-button mx-5"  href="${pageContext.request.contextPath}/ads" aria-hidden="true">See all ads<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 </div>
 
 

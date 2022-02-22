@@ -7,6 +7,7 @@
     </jsp:include>
 
 </head>
+
 <body>
 <jsp:include page="partials/navbar.jsp"/>
 
@@ -15,22 +16,24 @@
 
 <div class="container">
     <h1>Please fill in your information.</h1>
-    <form action="/register" method="post">
+
+    <div class="container-fluid my-5 justify-content-around">
+    <form action="/register" method="POST">
         <div class="form-group">
             <label for="username">Username</label>
-            <input id="username" name="username" class="form-control" type="text"zz>
+            <input id="username" name="username" class="form-control" type="text" >
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input id="email" name="email" class="form-control" type="email">
+            <input id="email" name="email" class="form-control" type="email" >
         </div>
         <div class="form-group">
             <label for="password">Password</label>
-            <input id="password" name="password" class="form-control" type="password">
+            <input id="password" name="password" class="form-control" type="password" >
         </div>
         <div class="form-group">
             <label for="confirm_password">Confirm Password</label>
-            <input id="confirm_password" name="confirm_password" class="form-control" type="password">
+            <input id="confirm_password" name="confirm_password" class="form-control" type="password" >
         </div>
         <%--error attribute posts error message from registerservlet --%>
         <h3 style="color: red">${error}</h3>
@@ -38,8 +41,8 @@
     </form>
 </div>
 
-<div class="container-fluid my-5">
-    <a class="back-button mx-auto" href="/index.jsp"><i class="fa fa-chevron-left" aria-hidden="true">Return Home</i></a>
+
+    <a class="back-button mx-auto" href="/index.jsp"><i class="fa fa-chevron-left" aria-hidden="true"></i>Return Home</a>
 
 </div>
 
